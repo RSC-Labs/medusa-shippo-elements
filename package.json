@@ -1,6 +1,6 @@
 {
   "name": "@rsc-labs/medusa-shippo-elements",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin for using Shippo Elements to create shipping labels directly from admin dashboard",
   "main": "dist/index.js",
   "author": "RSC Labs (https://rsoftcon.com)",
