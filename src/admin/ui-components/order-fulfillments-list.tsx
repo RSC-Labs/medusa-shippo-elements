@@ -43,7 +43,7 @@ const SelectFulfillment = (props: ChooseFulFillmentProps) => {
       <Select.Content>
           {isLoading && <CircularProgress/>}
           {order && order.fulfillments && order.fulfillments.filter(ful => isFulfillmentReady(ful))
-            .sort((a, b) => a.created_at.getTime() - b.created_at.getTime()).map((fulfillment) => (
+            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()).map((fulfillment) => (
               <Select.Item key={fulfillment.id} value={fulfillment.id}>
                 {`Created at: ${new Date(fulfillment.created_at).toDateString()}`}
               </Select.Item>

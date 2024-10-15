@@ -41,7 +41,7 @@ const SelectReturn = (props: ChooseFulFillmentProps) => {
       </Select.Trigger>
       <Select.Content>
           {isLoading && <CircularProgress/>}
-          {order && order.returns && order.returns.sort((a, b) => a.created_at.getTime() - b.created_at.getTime()).map((ret) => (
+          {order && order.returns && order.returns.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()).map((ret) => (
             <Select.Item key={ret.id} value={ret.id}>
               {`Created at: ${new Date(ret.created_at).toDateString()}`}
             </Select.Item>

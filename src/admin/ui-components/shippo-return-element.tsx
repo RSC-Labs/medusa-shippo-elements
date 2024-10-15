@@ -97,7 +97,7 @@ export const ShippoReturnElement = ({token, order, ret} :
         });
       }
     } else {
-      setError("Return is not created for this order.");
+      setError("Chosen Return does not exist or has wrong status");
     }
   }, [token, listenForEvents, order]);
 

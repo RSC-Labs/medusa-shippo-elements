@@ -30,13 +30,25 @@ After plugin installation, you can go to one of your orders and you will see add
 
 You have there two tabs - `Shipping` and `Return`.
 
+<picture>
+  <img alt="Shippo fulfillment" src="./docs/shippo-fulfillment.PNG">
+</picture>
+
 ### Shipping
 
 This tab is used for creating a shipping label to send your items to customer. 
 
 Before that, you need to create a fulfillment using `Create fulfillment` option, which is visible above (it is a part of default Admin UI functionalities).
 
+<picture>
+  <img alt="Create fulfillment" src="./docs/create-fulfillment.PNG">
+</picture>
+
 After creating a fulfillment, you can choose such fulfillment from the list and the label configuration will be automatically filled by the items which you have chosen in fulfillment. For your convenience, also the weight is calculated, so you have all information needed to generate a label.
+
+<picture>
+  <img alt="Shippo label" src="./docs/shipping-label.PNG">
+</picture>
 
 ### Return
 
